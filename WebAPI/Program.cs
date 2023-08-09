@@ -15,6 +15,10 @@ builder.Services.AddSingleton<ICarService, CarManager>();
 builder.Services.AddSingleton<ICarDal, EfCarDal>();
 builder.Services.AddSingleton<IColorSevice, ColorManager>();
 builder.Services.AddSingleton<IColorDal, EfColorDal>();
+builder.Services.AddSingleton<IBrandService, BrandManager>();
+builder.Services.AddSingleton<IBrandDal, EfBrandDal>();
+builder.Services.AddSingleton<ICustomerService, CustomerManager>();
+builder.Services.AddSingleton<ICustomerDal,  EfCustomerDal>();
 
 var app = builder.Build();
 
